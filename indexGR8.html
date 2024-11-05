@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Tech Airlines</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <link rel="stylesheet" href="styles.css">
+  <script src='main.js'></script>
+</head>
+<body style="background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );">
+
+<!--Header-->
+<div class="header" style="line-height: 0.1;">
+  <h1 style="font-size: 70px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 0px grey,
+               1px 2px 0px grey,
+               1px 3px 0px grey,
+               1px 4px 0px grey,
+               1px 5px 0px grey,
+               1px 6px 0px grey,
+               1px 10px 5px rgba(16, 16, 16, 0.5),
+               1px 15px 10px rgba(16, 16, 16, 0.4),
+               1px 20px 30px rgba(16, 16, 16, 0.3),
+               1px 25px 50px rgba(16, 16, 16, 0.2);">
+            TECH AIRLINES:</h1>
+            <h3 style="font-style: oblique; font-family: sans-serif;">Your flight to understanding computer technology.</h3>
+</div>
+
+<!--Navbar-->
+<div class="navbar">
+  <a class="active" href="indexGR8.html">Home</a>
+  <a href="authors.html">About Us</a>
+    <div class="dropdown">
+      <button class="dropbtn"><b>Topics</b>
+        <i class="fa fa-caret-down">
+          </i>
+      </button>
+        <div class="dropdown-content">
+          <a href="topic1.html">Understanding your Computer</a>
+          <a href="topic2.html">Ethical Computing</a>
+          <a href="topic3.html">Technology in Society</a>
+        </div>
+    </div>
+</div>
+
+<!--Slideshow-->
+<script>
+    let slideIndex = 0;
+  
+    function showSlides() {
+      let i;
+      const slides = document.getElementsByClassName("mySlides");
+      
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+  
+      slideIndex++;
+  
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+  
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 2000); // Change slide every 2 seconds
+    }
+    
+    document.addEventListener("DOMContentLoaded", function () {
+      showSlides(); // Start the slideshow when the page is loaded
+    });
+  </script>
+  
+<!--Slideshow background-->
+<div class="parallax">
+  <div class="slideshow-container" id="background-slideshow">
+      <div class="mySlides fade">
+          <img src="parallax1.jpg" style="width:100vw; object-fit: cover;">
+      </div>
+      <div class="mySlides fade">
+          <img src="parallax2.jpg" style="width:100vw; object-fit: cover;">
+      </div>
+      <!-- Add more slides as needed -->
+  </div>
+</div>
+  
+<!--Home - Main content-->
+  <div class="main">
+    <h2 class="mainhtwo"><center>Welcome Aboard Future Techs!</h2>
+      <center><img src="introimg.gif" alt="Image" style: width="750px" height="300px"></center>
+      <p class="par">Hey there! Do you want to learn more about computers? Then you've come to the right place! This section contains a comprehensive analysis of the essential things you need to know about what a computer is, how it functions, and its different types. This website also includes basic understanding about the present technology in society along with the proper ethics that we should advocate in the cyberworld. It is guaranteed that you will find the things you need, regardless of your status in this journey. The terminologies in this section are streamlined in order for you to completely and easily assess and comprehend what is what. It is understood that computer at this age appear quite intimidating and complex, but rest assured that the contents in this section is beginner-friendy as much as it help those going back on track. We'll help you become a more tech-savvy individual capable of answering questions about computer systems from family and close friends.
+      <br>
+      <p class="par">Look no further if you're ready to dive into the world of computer systems; you'll find all the information you need right here! Let's get this party started! Refer to the <i>Topic</i> section above to view the included topics along with its reference(s).
+      </p>
+  </div>
+
+
+<!--Image Gallery-->
+<h2 style="text-align:center">Throwback to the Legacy of Computer Technology</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="First Mouse.gif" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="Portable Computers.gif" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="Birth of Macintosh.gif" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="Apple and Intel.gif" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="Console Crazy.gif" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="Artificial Intelligence.gif" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="rowgal">
+    <div class="columngal">
+      <img class="demo cursor" src="First Mouse.gif" style="width:100%" onclick="currentSlide(1)" alt="1941: First Mouse">
+    </div>
+    <div class="columngal">
+      <img class="demo cursor" src="Portable Computers.gif" style="width:100%" onclick="currentSlide(2)" alt="1973: Portable Computers">
+    </div>
+    <div class="columngal">
+      <img class="demo cursor" src="Birth of Macintosh.gif" style="width:100%" onclick="currentSlide(3)" alt="1984: Birth of Macintosh">
+    </div>
+    <div class="columngal">
+      <img class="demo cursor" src="Apple and Intel.gif" style="width:100%" onclick="currentSlide(4)" alt="2005: Apple and Intel">
+    </div>
+    <div class="columngal">
+      <img class="demo cursor" src="Console Crazy.gif" style="width:100%" onclick="currentSlide(5)" alt="2013: Console Crazy">
+    </div>    
+    <div class="columngal">
+      <img class="demo cursor" src="Artificial Intelligence.gif" style="width:100%" onclick="currentSlide(6)" alt="20xx: Artificial Intelligence">
+    </div>
+  </div>
+</div>
+
+<script>
+  let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {
+            slideIndex = 1;
+        }
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+  </script>
+
+  <div class="footer">
+    <h3>Reference:<br><br><a href="https://www.techradar.com/news/computing/10-biggest-moments-in-computing-history-1326851">10 biggest moments in computing history</a>
+    <h3>Copyrights 2023. <br> All Rights Reserved.</h3>
+    <p> Samonte, Ralph Matthew A. | Surwela, Edwin John L. </p>
+    <h3>BSIT 1105 <br> Group 8</h3>
+    <p>Visit About Us page to access contacts.</pp>
+  </div>
+  
+</div>
+</body>
+</html>
