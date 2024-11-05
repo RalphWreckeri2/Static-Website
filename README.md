@@ -1,4 +1,4 @@
-This is a basic static website. 
+This is a basic static website.<br> 
 Take note that:
 📍 First ever major (at that time) project we made.
 📍 We were newbies.
